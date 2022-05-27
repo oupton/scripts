@@ -1,0 +1,7 @@
+[init]
+	defaultBranch = main
+[user]
+	email = upton.oliver@gmail.com
+	name = Oliver Upton
+[core]
+	editor = vim

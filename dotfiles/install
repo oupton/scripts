@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+set -e
+
+this="$(basename $0)"
+
+for file in $(dirname $0)/*; do
+	filebase="$(basename $file)"
+	if [ "$filebase" != "$this" ]; then
+		echo "Installing .$filebase"
+		cp "$file" "$HOME/.$filebase"
+	fi
+done
